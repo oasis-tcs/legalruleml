@@ -9,7 +9,7 @@
 <div>
 <h3>Description</h3>
 
-<p>The purpose of this GitHub repository is to develop and distribute good examples in order to share knowledge about the correct application of <a href="http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/">LegalRuleML</a> standard. The objective of the LegalRuleML TC is to extend RuleML with formal features specific to legal norms, guidelines, policies, and reasoning. The TC defines a standard (expressed with <a href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">W3C XML-schema</a> and <a href="https://en.wikipedia.org/wiki/RELAX_NG">Relax NG</a>) that is able to represent the particularities of the legal normative rules with a rich, articulated, and meaningful markup language.</p>
+<p>The purpose of this GitHub repository is to develop and distribute good examples in order to share knowledge about the correct application of <a href="http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/">LegalRuleML</a> standard. The objective of the LegalRuleML TC is to extend <a href="http://wiki.ruleml.org/">RuleML</a> with formal features specific to legal norms, guidelines, policies, and reasoning. The TC defines a standard (expressed with <a href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">W3C XML-schema</a> and <a href="https://en.wikipedia.org/wiki/RELAX_NG">Relax NG</a>) that is able to represent the particularities of the legal normative rules with a rich, articulated, and meaningful markup language.</p>
 </div>
 
 <div>
