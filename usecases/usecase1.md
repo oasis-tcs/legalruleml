@@ -7,13 +7,13 @@ Two examples from the D-KB are selected for this use case. They are briefly desc
 
 <h2>Example 1</h2>
 
-formalizes Art. 12, par. 7, of the GDPR 
+Example 1 formalizes Art. 12, par. 7, of the GDPR. The example includes two main if-then rules in reified I/O logic, formalizing each the statements:
 
+<ol>
+   <li>"<i>If the controller provides information to the data subject, he is permitted to attach an icon</i>"</li>
+   <li>"<i>If the controller provides information to the data subject and attach an electronic icon, then he is obliged to make the icon machine-readable</i>"</li>
+</ol>
 
-Ex1 includes two main if-then rules in reified I/O logic, formalizing each the statements:
-
-(1)	“If the controller provides information to the data subject, he is permitted to attach an icon”
-(2)	“If the controller provides information to the data subject and attach an electronic icon, then he is obliged to make the icon machine-readable”
 Statement (1) is formalized by the following rule in RuleML, which states that if there is a communication between the controller and the data subject, the controller is permitted to attach (predicate “AttachTo”) an icon. Note that the if-then rule do not contain deontic operators. In I/O logics, deontic inferences are implemented in a meta-level [Makinson and van der Torre, 2000]. The rule is then a standard first-order logic implication which is marked as permission via the LegalRuleML tag “lrml:Context”. See [Robaldo et al., 2019] for more details.
 
       <ruleml:Rule closure="universal">
