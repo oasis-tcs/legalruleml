@@ -7,7 +7,7 @@ Two examples from the D-KB are selected for this use case. They are briefly desc
 
 <h2>Example 1</h2>
 
-Example 1 formalizes Art. 12, par. 7, of the GDPR. The example includes two main if-then rules in reified I/O logic, formalizing each the statements:
+Example 1 formalizes art. 12, par. 7, of the GDPR. The example includes two main if-then rules in reified I/O logic, formalizing each the statements:
 
 <ol>
    <li>"<i>If the controller provides information to the data subject, he is permitted to attach an icon</i>"</li>
