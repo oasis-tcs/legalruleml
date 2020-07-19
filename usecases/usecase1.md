@@ -3,7 +3,7 @@
 This use case presents LegalRuleML serializations of <a href="https://academic.oup.com/logcom/article-abstract/27/8/2471/3098296?redirectedFrom=fulltext">reified Input/Output 
 logic</a> formulae from <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">the DAPRECO knowledge base (D-KB)</a>. The D-KB formalizes the norms in the <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">General Data Protection Regulation (GDPR)</a> into 966 reified Input/Output logic formulae. The full D-KB is available <a href="https://raw.githubusercontent.com/dapreco/daprecokb/master/gdpr/rioKB_GDPR.xml">at this link</a>.
 
-Two examples from the D-KB are selected for this use case. They are briefly described below, while the full LegalRuleML files may be downloaded from <a href="usecases/files/Examples from the D-KB.zip">this link</a>; the files contain further comments and clarifications. Further examples are presented in <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">[Robaldo et al., 2019]</a>.
+Two examples from the D-KB are selected for this use case. They are briefly described below, while the full LegalRuleML files may be downloaded from <a href="https://github.com/oasis-tcs/legalruleml/blob/master/usecases/files/Examples%20from%20the%20D-KB.zip">this link</a>; the files contain further comments and clarifications. Further examples are presented in <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">[Robaldo et al., 2019]</a>.
 
 <h2>Example 1</h2>
 
