@@ -11,6 +11,21 @@
 <h3>Description</h3>
 
 <p>The purpose of this GitHub repository is to develop and distribute good examples in order to share knowledge about the correct application of <a href="http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/">LegalRuleML</a> standard. The objective of the LegalRuleML TC is to extend <a href="http://wiki.ruleml.org/">RuleML</a> with formal features specific to legal norms, guidelines, policies, and reasoning. The TC defines a standard (expressed with <a href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">W3C XML-schema</a> and <a href="https://en.wikipedia.org/wiki/RELAX_NG">Relax NG</a>) that is able to represent the particularities of the legal normative rules with a rich, articulated, and meaningful markup language.</p>
+
+<p>
+LegalRuleML should be used for as an intermediate language between norms/textual provisions and logical implementations of the norms/textual provisions. Ideally, a LegalRuleML serialisation of norms/textual provisions should be conceptual, in the sense that the representation is neutral (see examples at 
+<a href="http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/">this link</a>) and independent of any particular logic formalism or system for legal reasoning or implementation instructions. However, it is possible to write conformant LegalRuleML that is specific to a particular Logic.<br>
+The use cases below provide examples of conformant serialisation.
+
+<ul>
+  <li><b>Use Case #1</b>: The use case serialises GDPR Section X using Reified I/O</li>
+  <li><b>Use Case #2</b>: The use case serialises...</li>
+  <li><b>Use Case #3</b> C</li>
+  <li><b>Etc.</b></li>
+</ul>
+
+</p>
+
 </div>
 
 <div>
