@@ -7,7 +7,7 @@ Two examples from the D-KB are selected for this use case. They are briefly desc
 
 <h2>Example 1</h2>
 
-Example 1 formalizes art. 12, par. 7, of the GDPR. The example includes two main if-then rules in reified I/O logic, formalizing each the statements:
+Example 1 formalizes art. 12(7), of the GDPR. The example includes two main if-then rules in reified I/O logic, formalizing each the statements:
 
 <ol>
    <li>"<i>If the controller provides information to the data subject, he is permitted to attach an icon</i>"</li>
@@ -105,9 +105,7 @@ Statement (1) is formalized by the following rule in RuleML. The rule states tha
         </ruleml:then>
       </ruleml:Rule>
 
-Statement (2) is formalized by the following rule in RuleML, which states that if an icon is attached to a communication between the controller and the data subject, then the icon must be obligatorily in machine-readable form. Contrary to the previous case, this rule is market as obligation, via the LegalRuleML tag “lrml:Context”.
-
-
+Statement (2) is formalized by the following rule in RuleML, which states that whenever an icon is attached to a communication between the controller and the data subject, then the icon must be obligatorily in machine-readable form. This rule is tagged as obligation, again via the LegalRuleML tag "lrml:Context".
 
       <ruleml:Rule closure="universal">
         <ruleml:if>
@@ -216,15 +214,17 @@ Statement (2) is formalized by the following rule in RuleML, which states that i
 
 <h2>Example 2</h2>
 
-Ex2 formalizes Art. 5, par. 1(a), Art.6, par. 1(a), and Art. 8, par. 1 of the GDPR
- 
-Ex2 includes two main if-then rules in reified I/O logic, formalizing each the statements:
-(1)	“The controller is obliged to implement measures that cause the lawfulness, the fairness, and the transparency of the processing of personal data"  
-(2)	"If the data subject has given consent to the processing, then the processing is lawful". 
-(3)	“The minimal age for giving consent is 16, unless there is a specific exception within the Member State (Member States are allowed to lower the minimal age for giving consent to the data processing, but not lower than 13”)
-(4)	“If the age of the data subject is below the minimal age for giving consent, then rule (2) is not valid"
-(5)	"If the age of the data subject is below the minimal age for giving consent and the holder of his parental responsibility has given consent to the processing, then the processing is lawful".
-Statement (1) is formalized by the following rule in RuleML, stating that if there is a data processing “:ep”, then the controller is obliged to implement measures “:em” that cause the processing to be lawful, fair, and transparent (facts “:el”, “:ef”, and “:et”).
+Example 2 formalizes artt. 5(1)(a), 6(1)(a), 8(1) of the GDPR. The example includes the following if-then rules in reified I/O logic, formalizing each the statements:
+
+<ol>
+   <li>"<i>The controller is obliged to implement measures that cause the lawfulness, the fairness, and the transparency of the processing of personal data</i>"</li>
+   <li>"<i>If the data subject has given consent to the processing, then the processing is lawful</i>"</li>
+   <li>"<i>The minimal age for giving consent is 16, unless there is a specific exception within the Member State (Member States are allowed to lower the minimal age for giving consent to the data processing, but not lower than 13</i>"</li>
+   <li>"<i>If the age of the data subject is below the minimal age for giving consent, then rule (2) is not valid</i>"</li>
+   <li>"<i>If the age of the data subject is below the minimal age for giving consent and the holder of his parental responsibility has given consent to the processing, then the processing is lawful</i>"</li>
+</ol>
+
+Statement (1) is formalized by the following rule in RuleML, stating that whenever there is a data processing ":ep", then the controller is obliged to implement measures ":em" that cause the processing to be lawful, fair, and transparent (facts ":el", ":ef", and ":et").
 
       <ruleml:Rule closure="universal">
         <ruleml:if>
@@ -298,10 +298,10 @@ Statement (1) is formalized by the following rule in RuleML, stating that if the
                 <ruleml:Var keyref=":t2" />
               </ruleml:Atom>
               <ruleml:Atom>
-   <ruleml:After>
-                     <ruleml:Var keyref=":t2" />
-                      <ruleml:Var keyref=":t1" />
-	   </ruleml:After>
+              <ruleml:After>
+                <ruleml:Var keyref=":t2" />
+                <ruleml:Var keyref=":t1" />
+              </ruleml:After>
               </ruleml:Atom>
               <ruleml:Atom keyref=":A4">
                 <ruleml:Rel iri="rioOnto:and" />
@@ -371,8 +371,9 @@ Statement (1) is formalized by the following rule in RuleML, stating that if the
         </ruleml:then>
       </ruleml:Rule>
 
-Statement (2) is a first-order entailment stating that if the data subject has given consent to the data processing, then the data processing is lawful, unless a specific exception on the age of the data subject (denoted by the predicate “rioOnto:exceptionCha2Art8Par1”). By default, this exception is false via negation-as-failure (RuleML tag “ruleml:Naf”):
+Statement (2) is a first-order entailment stating that if the data subject has given consent to the data processing, then the data processing is lawful, unless a specific exception on the age of the data subject (denoted by the predicate “rioOnto:exceptionCha2Art8Par1”). By default, this exception is false via negation-as-failure (RuleML tag "ruleml:Naf"):
 
+      <ruleml:Rule closure="universal">
         <ruleml:if>
           <ruleml:Exists>
             <ruleml:Var key=":a1">a1</ruleml:Var>
@@ -474,39 +475,39 @@ Statement (2) is a first-order entailment stating that if the data subject has g
         </ruleml:then>
       </ruleml:Rule>
 
+Statement (3) is a first-order entailment stating that the minimal age for giving consent to the processing, denoted by a first-order function "minAgeForConsent" that takes in input an event of data processing ":ep" and returns an integer, is 16, unless the exception "exceptionMinAgeForConsent" holds. The latter is false by default, but if the Member State of the data subject lower the minimal age for giving consent to the processing, then the predicate "exceptionMinAgeForConsent" becomes true.
 
-Statement (3) is a first-order entailment stating that the minimal age for giving consent to the processing, denoted by a first-order function “minAgeForConsent” that takes in input an event of data processing “:ep” and returns an integer, is 16, unless the exception “exceptionMinAgeForConsent” holds. The latter is false by default, but if the Member State of the data subject lower the minimal age for giving consent to the processing, then the predicate “exceptionMinAgeForConsent” becomes true.
-
+      <ruleml:Rule closure="universal">
         <ruleml:if>
           <ruleml:Exists>
-            	<ruleml:Var key=":x">x</ruleml:Var>
-            	<ruleml:Var key=":z">z</ruleml:Var>
-            	<ruleml:Var key=":w">w</ruleml:Var>
-<ruleml:Naf>
-                <ruleml:Atom>
-                  <ruleml:Rel iri="rioOnto:exceptionMinAgeForConsent" />
-                  <ruleml:Var key=":ep">ep</ruleml:Var>
-                </ruleml:Atom>
-              </ruleml:Naf>
-<ruleml:Atom keyref=":A3">
-	  <ruleml:Rel iri="prOnto:PersonalDataProcessing" />
-  <ruleml:Var keyref=":ep" />
-	  <ruleml:Var keyref=":x" />
-	  <ruleml:Var keyref=":z" />
-	</ruleml:Atom>
-	<ruleml:Atom>
-  <ruleml:Rel iri="prOnto:DataSubject" />
-	  <ruleml:Var keyref=":w" />
-	</ruleml:Atom>
-	<ruleml:Atom>
-	  <ruleml:Rel iri="prOnto:PersonalData" />
-	  <ruleml:Var keyref=":z" />
-	  <ruleml:Var keyref=":w" />
-	  </ruleml:Atom>
-	<ruleml:Atom>
-	  <ruleml:Rel iri="prOnto:Processor" />
-	  <ruleml:Var keyref=":x" />
-	</ruleml:Atom>
+            <ruleml:Var key=":x">x</ruleml:Var>
+            <ruleml:Var key=":z">z</ruleml:Var>
+            <ruleml:Var key=":w">w</ruleml:Var>
+            <ruleml:Naf>
+              <ruleml:Atom>
+                <ruleml:Rel iri="rioOnto:exceptionMinAgeForConsent" />
+                <ruleml:Var key=":ep">ep</ruleml:Var>
+              </ruleml:Atom>
+            </ruleml:Naf>
+            <ruleml:Atom keyref=":A3">
+              <ruleml:Rel iri="prOnto:PersonalDataProcessing" />
+              <ruleml:Var keyref=":ep" />
+              <ruleml:Var keyref=":x" />
+              <ruleml:Var keyref=":z" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="prOnto:DataSubject" />
+              <ruleml:Var keyref=":w" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="prOnto:PersonalData" />
+              <ruleml:Var keyref=":z" />
+              <ruleml:Var keyref=":w" />
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="prOnto:Processor" />
+              <ruleml:Var keyref=":x" />
+            </ruleml:Atom>
           </ruleml:Exists>
         </ruleml:if>
         <ruleml:then>
@@ -519,10 +520,11 @@ Statement (3) is a first-order entailment stating that the minimal age for givin
             <ruleml:Ind>16</ruleml:Ind>
           </ruleml:Atom>
         </ruleml:then>
+      </ruleml:Rule>
 
+Statement (4) is a first-order entailment stating that if the age of the data subject, given by a function "ageOf" that takes a data subject and returns an integer, is lower than the minimal age to give consent, then exception "exceptionCha2Art8Par1" holds. This blocks the rule associated with statement (2), as explained above.
 
-Statement (4) is a first-order entailment stating that if the age of the data subject, given by a function “ageOf” that takes a data subject and returns an integer, is lower than the minimal age to give consent, then exception “exceptionCha2Art8Par1” holds. This blocks the rule associated with statement (2), as explained above.
-
+      <ruleml:Rule closure="universal">
         <ruleml:if>
           <ruleml:Exists>
             <ruleml:Var key=":a1">a1</ruleml:Var>
@@ -596,9 +598,9 @@ Statement (4) is a first-order entailment stating that if the age of the data su
         </ruleml:then>
       </ruleml:Rule>
 
-
 Statement (5) is a first-order entailment similar to statement (2) above: if the age of the data subject is lower than the minimal age to give consent and the holder of his parental responsibility has given consent to the data processing, then the data processing is lawful. Contrary to statement (2), the GDPR does not specify any exception for statement (5).
 
+      <ruleml:Rule closure="universal">
         <ruleml:if>
           <ruleml:Exists>
             <ruleml:Var key=":a1">a1</ruleml:Var>
