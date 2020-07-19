@@ -18,10 +18,10 @@ LegalRuleML should be used for as an intermediate language between norms/textual
 The use cases below provide examples of conformant serialisation.
 
 <ul>
-  <li><b>Use Case #1</b>: The use case serialises <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">GDPR</a>, artt. 5(1)(a), 6(1)(a), 8(1), 12(7), using 
+  <li><a href="usecases/usecase1"><b>Use Case #1</b></a>: The use case serialises <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">GDPR</a>, artt. 5(1)(a), 6(1)(a), 8(1), 12(7), using 
     reified Input/Output logic <a href="https://academic.oup.com/logcom/article-abstract/27/8/2471/3098296?redirectedFrom=fulltext">[Robaldo and Sun, 2017]</a>.</li>
   <li><b>Use Case #2</b>: The use case serialises...</li>
-  <li><b>Use Case #3</b> C</li>
+  <li><b>Use Case #3</b>: The use case serialises...</li>
   <li><b>Etc.</b></li>
 </ul>
 
