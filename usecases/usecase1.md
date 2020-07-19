@@ -1,7 +1,7 @@
 <h1>Use Case #1</h1>
 
 This use case presents LegalRuleML serializations of <a href="https://academic.oup.com/logcom/article-abstract/27/8/2471/3098296?redirectedFrom=fulltext">reified Input/Output 
-logic</a> formulae from <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">the DAPRECO knowledge base (D-KB)</a>. The D-KB formalizes the norms in the <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">General Data Protection Regulation (GDPR)</a> into 966 formulae in reified Input/Output logic, encoded in LegalRuleML. The full D-KB is available <a href="https://github.com/dapreco/daprecokb/blob/master/gdpr/rioKB_GDPR.xml">at this link</a>.
+logic</a> formulae from <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">the DAPRECO knowledge base (D-KB)</a>. The D-KB formalizes the norms in the <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">General Data Protection Regulation (GDPR)</a> into 966 reified Input/Output logic formulae. The full D-KB is available <a href="https://github.com/dapreco/daprecokb/blob/master/gdpr/rioKB_GDPR.xml">at this link</a>.
 
 Two examples are selected for this use case: Ex1 and Ex2. Ex1 formalizes Art. 12, par. 7, of the GDPR while Ex2 formalizes Art. 5, par. 1(a), Art.6, par. 1(a), and Art. 8, par. 1 of the GDPR. The full D-KB, which formalizes GDPR norms into 966 formulae in reified I/O logic, encoded in LegalRuleML, is available at this link.
 These and other examples are discussed in more [Robaldo et al., 2019]. 
