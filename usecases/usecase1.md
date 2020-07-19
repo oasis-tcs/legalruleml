@@ -14,7 +14,7 @@ Example 1 formalizes art. 12, par. 7, of the GDPR. The example includes two main
    <li>"<i>If the controller provides information to the data subject and attach an electronic icon, then he is obliged to make the icon machine-readable</i>"</li>
 </ol>
 
-Statement (1) is formalized by the following rule in RuleML, which states that if there is a communication between the controller and the data subject, the controller is permitted to attach (predicate “AttachTo”) an icon. Note that the if-then rule do not contain deontic operators. In I/O logics, deontic inferences are implemented in a meta-level [Makinson and van der Torre, 2000]. The rule is then a standard first-order logic implication which is marked as permission via the LegalRuleML tag “lrml:Context”. See [Robaldo et al., 2019] for more details.
+Statement (1) is formalized by the following rule in RuleML. The rule states that whenever there is a communication between the controller and the data subject, the controller is permitted to attach (predicate "AttachTo") an icon. Note that the if-then rule do not contain deontic operators. In Input/Output logics, deontic reasoning is implemented in an external level (see <a href="https://link.springer.com/chapter/10.1007/978-94-017-0395-6_12">[Makinson and van der Torre, 2000]</a>). The rule below is then a standard first-order logic implication which is tagged as permission via the LegalRuleML tag "lrml:Context". See <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">[Robaldo et al., 2019]</a> for more details.
 
       <ruleml:Rule closure="universal">
         <ruleml:if>
