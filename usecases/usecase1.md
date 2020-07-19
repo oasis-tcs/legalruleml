@@ -7,7 +7,7 @@ Two examples from the D-KB are selected for this use case. They are briefly desc
 
 <h2>Example 1</h2>
 
-Example 1 formalizes art. 12(7), of the GDPR. The example includes two main if-then rules in reified I/O logic, formalizing each the statements:
+Example 1 formalizes art. 12(7), of the GDPR. The example includes two main if-then rules in reified Input/Output logic, formalizing each the statements:
 
 <ol>
    <li>"<i>If the controller provides information to the data subject, he is permitted to attach an icon</i>"</li>
@@ -214,7 +214,7 @@ Statement (2) is formalized by the following rule in RuleML, which states that w
 
 <h2>Example 2</h2>
 
-Example 2 formalizes artt. 5(1)(a), 6(1)(a), 8(1) of the GDPR. The example includes the following if-then rules in reified I/O logic, formalizing each the statements:
+Example 2 formalizes artt. 5(1)(a), 6(1)(a), 8(1) of the GDPR. The example includes the following if-then rules in reified Input/Output logic, formalizing each the statements:
 
 <ol>
    <li>"<i>The controller is obliged to implement measures that cause the lawfulness, the fairness, and the transparency of the processing of personal data</i>"</li>
