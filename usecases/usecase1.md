@@ -8,7 +8,7 @@ These and other examples are discussed in more [Robaldo et al., 2019].
 
 The two LegalRuleML files encoding Ex1 and Ex2 are available at this link and this link; the LegalRuleML files contain further comments and clarifications.
 
-Ex1
+<h2>Ex1</h2>
 Ex1 includes two main if-then rules in reified I/O logic, formalizing each the statements:
 (1)	“If the controller provides information to the data subject, he is permitted to attach an icon”
 (2)	“If the controller provides information to the data subject and attach an electronic icon, then he is obliged to make the icon machine-readable”
