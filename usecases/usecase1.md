@@ -1,6 +1,7 @@
 <h1>Use Case #1</h1>
 
 This use case presents LegalRuleML serializations of reified I/O logic formulae from the DAPRECO knowledge base (D-KB). The D-KB and reified I/O logic are respectively described in [Robaldo et al., 2019] and [Robaldo and Sun, 2017].
+
 The D-KB formalizes the norms in the General Data Protection Regulation (GDPR) in reified I/O logic. Two examples are selected for this use case: Ex1 and Ex2. Ex1 formalizes Art. 12, par. 7, of the GDPR while Ex2 formalizes Art. 5, par. 1(a), Art.6, par. 1(a), and Art. 8, par. 1 of the GDPR. The full D-KB, which formalizes GDPR norms into 966 formulae in reified I/O logic, encoded in LegalRuleML, is available at this link.
 These and other examples are discussed in more [Robaldo et al., 2019]. The paper also includes comparisons with alternative approaches, in particular with [Rotolo et al., 2015] and [Governatori, 2015]. 
 The two LegalRuleML files encoding Ex1 and Ex2 are available at this link and this link; the LegalRuleML files contain further comments and clarifications.
