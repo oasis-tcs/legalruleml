@@ -3,13 +3,15 @@
 This use case presents LegalRuleML serializations of <a href="https://academic.oup.com/logcom/article-abstract/27/8/2471/3098296?redirectedFrom=fulltext">reified Input/Output 
 logic</a> formulae from <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">the DAPRECO knowledge base (D-KB)</a>. The D-KB formalizes the norms in the <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">General Data Protection Regulation (GDPR)</a> into 966 reified Input/Output logic formulae. The full D-KB is available <a href="https://github.com/dapreco/daprecokb/blob/master/gdpr/rioKB_GDPR.xml">at this link</a>.
 
-Two examples are selected for this use case: Ex1 and Ex2. Ex1 formalizes Art. 12, par. 7, of the GDPR while Ex2 formalizes Art. 5, par. 1(a), Art.6, par. 1(a), and Art. 8, par. 1 of the GDPR. The full D-KB, which formalizes GDPR norms into 966 formulae in reified I/O logic, encoded in LegalRuleML, is available at this link.
-These and other examples are discussed in more [Robaldo et al., 2019]. 
+Two examples are selected for this use case. The two examples are briefly described below, while the full LegalRuleML files may be downloaded from this link; the LegalRuleML files contain further comments and clarifications. Further examples are presented in <a href="https://link.springer.com/article/10.1007/s10849-019-09309-z?shared-article-renderer">[Robaldo et al., 2019]</a>.
 
-The two LegalRuleML files encoding Ex1 and Ex2 are available at this link and this link; the LegalRuleML files contain further comments and clarifications.
+<h2>Example 1</h2>
 
-<h2>Ex1</h2>
+formalizes Art. 12, par. 7, of the GDPR 
+
+
 Ex1 includes two main if-then rules in reified I/O logic, formalizing each the statements:
+
 (1)	“If the controller provides information to the data subject, he is permitted to attach an icon”
 (2)	“If the controller provides information to the data subject and attach an electronic icon, then he is obliged to make the icon machine-readable”
 Statement (1) is formalized by the following rule in RuleML, which states that if there is a communication between the controller and the data subject, the controller is permitted to attach (predicate “AttachTo”) an icon. Note that the if-then rule do not contain deontic operators. In I/O logics, deontic inferences are implemented in a meta-level [Makinson and van der Torre, 2000]. The rule is then a standard first-order logic implication which is marked as permission via the LegalRuleML tag “lrml:Context”. See [Robaldo et al., 2019] for more details.
@@ -212,7 +214,10 @@ Statement (2) is formalized by the following rule in RuleML, which states that i
       </ruleml:Rule>
 
 
-Ex2
+<h2>Example 2</h2>
+
+Ex2 formalizes Art. 5, par. 1(a), Art.6, par. 1(a), and Art. 8, par. 1 of the GDPR
+ 
 Ex2 includes two main if-then rules in reified I/O logic, formalizing each the statements:
 (1)	“The controller is obliged to implement measures that cause the lawfulness, the fairness, and the transparency of the processing of personal data"  
 (2)	"If the data subject has given consent to the processing, then the processing is lawful". 
