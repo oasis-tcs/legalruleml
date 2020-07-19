@@ -219,7 +219,7 @@ Example 2 formalizes artt. 5(1)(a), 6(1)(a), 8(1) of the GDPR. The example inclu
 <ol>
    <li>"<i>The controller is obliged to implement measures that cause the lawfulness, the fairness, and the transparency of the processing of personal data</i>"</li>
    <li>"<i>If the data subject has given consent to the processing, then the processing is lawful</i>"</li>
-   <li>"<i>The minimal age for giving consent is 16, unless there is a specific exception within the Member State (Member States are allowed to lower the minimal age for giving consent to the data processing, but not lower than 13</i>"</li>
+   <li>"<i>The minimal age for giving consent is 16, unless there is a specific exception within the Member State (Member States are allowed to lower the minimal age for giving consent to the data processing, but not lower than 13)</i>"</li>
    <li>"<i>If the age of the data subject is below the minimal age for giving consent, then rule (2) is not valid</i>"</li>
    <li>"<i>If the age of the data subject is below the minimal age for giving consent and the holder of his parental responsibility has given consent to the processing, then the processing is lawful</i>"</li>
 </ol>
